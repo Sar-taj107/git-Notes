@@ -33,7 +33,7 @@ A VCS allows you to revert a file/project to a previous state, to see who made t
 
 ## 1. Git init
 The command is used to initialise a local repo as git repo.
-``` git init```
+```git init```
 ## 2. Git clone
 To clone a repo :
 ``` git clone <URL>```
@@ -84,22 +84,22 @@ Suppose, you modified a file after running git add, and do ```git status```, the
 So, to get the current state of the file to get committed, you must run  ``` git add ``` again.
 
 ## 5. Git commit
-- The git commit command is used to save the changes you've made to your local repository. Each commit represents a specific set of changes, and you can attach a commit message to describe what those changes are. Here's how you can use git commit:
+- The git commit command is used to save the changes you've made to your local repository. Each commit represents a specific set of changes, and you can attach a commit message to describe what those changes are. Here's how you can use ```git commit```:
 
-- Stage Changes: Before committing, you need to stage the changes you want to include in the commit. Use the git add command to stage files.
+- Stage Changes: Before committing, you need to stage the changes you want to include in the commit. Use the ```git add``` command to stage files.
 - For example:
   ```
     git add file1.txt   # Stage specific files
   ```
-  - You can also use git add . to stage all changes in the current directory.
-  - Commit Changes: Once you've staged your changes, you're ready to commit them. Use the git commit command with the -m flag to include a commit message. For example:
+  - You can also use ```git add .``` to stage all changes in the current directory.
+  - Commit Changes: Once you've staged your changes, you're ready to commit them. Use the ```git commit``` command with the -m flag to include a commit message. For example:
   ```
     git commit -m "Add new feature"
   ```
   - Replace "Add new feature" with a concise and descriptive message about what the commit does.
 
 ## 6. Git log
-- The git log command is used to display a list of commits in the repository's commit history. It provides information about each commit, such as the commit message, author, date, and a unique SHA-1 hash. Here's how you can use git log:
+- The ```git log``` command is used to display a list of commits in the repository's commit history. It provides information about each commit, such as the commit message, author, date, and a unique SHA-1 hash. Here's how you can use ```git log```:
   ```
     git log
   ```
@@ -112,7 +112,7 @@ So, to get the current state of the file to get committed, you must run  ``` git
   ```
 
 ## 7. Git push
-To push your local Git changes to a remote repository (like GitHub), you can use the git push command. Here are the basic steps to push your changes:
+To push your local Git changes to a remote repository (like GitHub), you can use the ```git push``` command. Here are the basic steps to push your changes:
 
 * First, make sure you're in the root directory of your Git repository in the terminal or command prompt.
 * Use the following command to push your changes:
@@ -133,7 +133,7 @@ To push your local Git changes to a remote repository (like GitHub), you can use
   ```
 * The -u flag stands for "upstream," and it sets up a tracking relationship between your local branch and the remote branch.
 ## 8. Git pull
-- The git pull command is used to fetch and merge changes from a remote repository into your local repository. It's a combination of two actions: git fetch and git merge. Here's how you can use it:
+- The ```git pull``` command is used to fetch and merge changes from a remote repository into your local repository. It's a combination of two actions: ```git fetch``` and ```git merge```. Here's how you can use it:
 - Navigate to the local repository's root directory using your terminal or command prompt.
 - Use the following command to pull changes from the remote repository:
   ```
@@ -151,12 +151,12 @@ To push your local Git changes to a remote repository (like GitHub), you can use
   ```
 - If there are any incoming changes, Git will fetch them from the remote repository and automatically merge them into your local branch. If there are merge conflicts, you will be prompted to resolve them.
 ## 9. Git revert
-- The git revert command is used to create a new commit that undoes the changes made in a previous commit. It is a safe way to reverse changes without altering the commit history. Here's how to use git revert:
+- The ```git revert``` command is used to create a new commit that undoes the changes made in a previous commit. It is a safe way to reverse changes without altering the commit history. Here's how to use ```git revert```:
   ```
     git revert <commit-hash>
   ```
-- `<commit-hash>`: Replace this with the hash of the commit you want to revert. You can find the commit hash by using the git log command.
-   When you run git revert, Git will create a new commit that contains the opposite changes of the specified commit. This means that the 
+- `<commit-hash>`: Replace this with the hash of the commit you want to revert. You can find the commit hash by using the ```git log``` command.
+   When you run ```git revert```, Git will create a new commit that contains the opposite changes of the specified commit. This means that the 
    changes introduced in the specified commit will be removed, effectively "reverting" the code to the state it was in before that commit 
    was made.
 ## 10. Git ignore 
