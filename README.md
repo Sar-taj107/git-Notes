@@ -159,7 +159,43 @@ To push your local Git changes to a remote repository (like GitHub), you can use
    When you run ```git revert```, Git will create a new commit that contains the opposite changes of the specified commit. This means that the 
    changes introduced in the specified commit will be removed, effectively "reverting" the code to the state it was in before that commit 
    was made.
-## 10. Git ignore 
+  
+## 10. Git branch
+- The ```git branch``` command is used to list, create, or delete branches in a Git repository. It displays a list of existing branches and indicates the currently active branch. Here are some common usages of the git branch command:
+#### List Branches:
+* To list all the branches in your Git repository, simply run:
+   ```
+     git branch
+   ```
+* This will show a list of branches with an asterisk (*) next to the currently active branch.
+
+#### Create a New Branch:
+- To create a new branch, you can use the -b flag followed by the branch name. For example, to create a new branch named "my-feature-branch," use:
+    ```
+    git branch my-feature-branch
+    ```
+- To create and switch to the new branch in one step, you can use:
+    ```
+    git checkout -b my-feature-branch
+    ```
+#### Delete a Branch:
+- To delete a branch, use the -d flag followed by the branch name. For example:
+  ```
+  git branch -d my-feature-branch
+  ```
+- If the branch contains changes that haven't been merged, Git will prevent deletion. You can force delete the branch using the -D flag:
+  ```
+    git branch -D my-feature-branch
+  ```
+#### Rename a Branch:
+- To rename a branch, you can create a new branch with the desired name and then delete the old one.
+  ```
+  git branch -m new-branch-name
+  ```
+- Remember to be cautious when deleting or renaming branches, especially if they contain important work. Always make sure you've committed your changes or created backups before making      such changes.
+
+By using git branch, you can manage and switch between branches within your Git repository effectively.
+## 11. Git ignore 
 For files such as log files, or build system files that you don't want Git to add or show them as untracked, you can ask Git to ignore them using the ```.gitignore``` file. 
 ``` 
 cat .gitignore
@@ -171,7 +207,7 @@ Here, the first line archives all the files ending with ```.o``` or ```.a```.<br
 The second line archives all the files ending with ```.~```.<br>
 The third line archives the entire directory called node_modules.<br>
 Note : Always set up a ```.gitignore``` file for a new project, before you get going so that you don't accidently commit any such files.
-## 11. Git diff
+## 12. Git diff
 The command is used to know what exactly were the changes, and not just the files where you made the changes.
 ``` git diff``` shows you the exact lines added and removed- the patch, as they were. The command basically answers two questions - What changes are yet to be staged ( use ``` git diff ```) ? and What staged changes are yet to get committed ?( use ```git diff --staged```) <br>
 Suppose you have two files, ```readme.txt``` and ```demo.txt```, and you've staged readme but not contr, you get the following response -
