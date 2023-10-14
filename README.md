@@ -156,8 +156,7 @@ To push your local Git changes to a remote repository (like GitHub), you can use
     git revert <commit-hash>
   ```
 - `<commit-hash>`: Replace this with the hash of the commit you want to revert. You can find the commit hash by using the ```git log``` command.
-   When you run ```git revert```, Git will create a new commit that contains the opposite changes of the specified commit. This means that the 
-   changes introduced in the specified commit will be removed, effectively "reverting" the code to the state it was in before that commit 
+   When you run ```git revert```, Git will create a new commit that contains the opposite changes of the specified commit. This means that the changes introduced in the specified commit will be removed, effectively "reverting" the code to the state it was in before that commit 
    was made.
   
 ## 10. Git branch
@@ -210,5 +209,6 @@ Note : Always set up a ```.gitignore``` file for a new project, before you get g
 ## 12. Git diff
 The command is used to know what exactly were the changes, and not just the files where you made the changes.
 ``` git diff``` shows you the exact lines added and removed- the patch, as they were. The command basically answers two questions - What changes are yet to be staged ( use ``` git diff ```) ? and What staged changes are yet to get committed ?( use ```git diff --staged```) <br>
-Suppose you have two files, ```readme.txt``` and ```demo.txt```, and you've staged readme but not contr, you get the following response -
+Suppose you have two files, ```readme.txt``` and ```demo.txt```, and you've staged readme but not contr, you get the following response
+
 ## ⚪ if you like this repo please give a star⭐ to show your support! 
